@@ -1,0 +1,69 @@
+body {
+	font-size:100%;
+}
+table {
+	border-collapse: collapse;	
+	background-color: wheat;
+}
+
+table,th,td, fieldset {
+	border:1px solid black;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Times New Roman";
+	font-size: 2em;
+	width: 60px;
+	height: 60px;
+}
+
+p {
+	font-weight: bolder;
+}
+
+#divHeader {
+	width:  100%;
+	height: 50px;
+	background-color: darkcyan;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+#divUserChoices {
+	width: 30%;
+	height: 300px;
+	background-color: lightyellow;;
+	float: left;
+}
+
+#divStatistics {
+	width: 30%;
+	height: 700px;
+	background-color: antiquewhite;;
+	float: left;
+}
+
+#divMahjongBoard {
+	width: 70%;
+	height:900px;
+	float: right;
+	background-color: lightcyan;
+}
+
+#divCurrentTime {
+	width: 70%;
+	height: 100px;
+	float: left;
+	background-color: lightskyblue;
+}
+
+#btnStartNewGame{
+		width: 40%;
+    	position:relative;
+    	left:20%;
+}

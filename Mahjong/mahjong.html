@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAHJONG SOLITAIRE</title>
+	<!-- EXTERNAL JAVASCRIPT -->
+	<script src="mahjong.js" type="text/javascript"></script>	
+	<!-- EXTERNAL CSS -->
+	<link rel="stylesheet" type="text/css" href="mahjong.css">
+</head>
+<body onload="bodyOnLoadEventHandler()">
+	<div id="divHeader"><h1>MAJHONG Solitaire</h1></div>
+	<div id="divUserChoices">
+		<form name="frmUserControl">
+				<br>
+				Board Size :
+				<select id="cmbBoardSize">
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>			
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>			
+					<option>13</option>
+					<option>14</option>			
+				</select><br></br>
+				<fieldset>
+					<legend>Symbols :</legend>
+					<input id="rdSymbolsUsed_az" type="radio" name="rdSymbolsUsed" value="az">a-z</input>
+					<input id="rdSymbolsUsed_AZ" type="radio" name="rdSymbolsUsed" value="AZ">A-Z</input>
+					<input id="rdSymbolsUsed_azAZ" type="radio" name="rdSymbolsUsed" value="azAZ">a-z,A-Z</input>
+					<input id="rdSymbolsUsed_img" type="radio" name="rdSymbolsUsed" value="img">image</input>
+				</fieldset>				
+				<br>				
+				Level :
+				<select id="cmbLevel">
+					<option>Easy</option>
+					<option>Medium</option>
+					<option>Hard</option>			
+				</select><br></br>
+				Copies per Symbol :
+				<select id="cmbCopiesPerSymbol">
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>			
+				</select>
+				<br></br><br>
+				<input id="btnStartNewGame" type="button" name="btnStartNewGame">
+		</form>
+	</div>
+	<!-- a placeholder for the Mahjong board -->
+	<div id="divMahjongBoard"></div>
+	<div id="divStatistics">
+		Correct Answers : <p id="pCorrectAnswers"></p>
+		Wrong Answers : <p id="pWrongAnswers"></p>
+		Remaining Time : <p id="pGameRemainingTime"></p>
+	</div>
+	<div id="divCurrentTime">Current Time : <p id="pCurrentTime"></p></div>
+</body>
+</html>
